@@ -48,8 +48,8 @@ const siwtchPlayer = function () {
 btnRoll.addEventListener('click', function () {
   //Generating a Random Dice Roll
   if (playing) {
-    const dice = Math.trunc(Math.random() * 6) + 1;
     diceEl.classList.remove('hidden');
+    const dice = Math.trunc(Math.random() * 6) + 1;
     diceEl.src = `dice-${dice}.png`;
 
     if (dice !== 1) {
